@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* ===========================================================================================================
+
+                                            Body 
+
+ =========================================================================================================== */
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(41, 59, 95, 1),
+    rgba(245, 92, 71, 1)
+  );
+}
+
+/* ===========================================================================================================
+
+                                            Navigation Bar 
+
+ =========================================================================================================== */
+
+.navbar {
+  background-color: rgba(253, 228, 156, 1);
+  padding: 10px 0;
+  width: 100%;
+  height: 15vh;
+  position: relative;
+}
+
+.navbar ul {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 30px;
+  right: 20px;
+}
+
+.navbar ul li a,
+.navbar ul li a:active {
+  font-weight: 900;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  color: #4c4c6d;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover,
+.active {
+  background-color: rgba(255, 183, 64, 0.5);
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 120%;
+  transition-duration: 0.7s;
+}
+
+/* ===========================================================================================================
+
+                                            Main  
+
+ =========================================================================================================== */
+
+/* Login page message */
+
+#top-message {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-success-msg,
+.top-error-msg {
+  width: 100%;
+  /* background-color:green; */
+  color: #fff;
+  text-align: center;
+}
+
+#loader-container {
+  height: 100vh;
+  background-color: #082032;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  /* background-color: red; */
+  border: 5px solid red;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: #aa2b1d;
+  border-left-color: #e4e978;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+  50% {
+    border-left-color: #fdf5ca;
+    border-right-color: #f6a9a9;
+  }
+  75% {
+    border-left-color: #fdf6f0;
+    border-right-color: #fdefef;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.info {
+  font-size: 150%;
+  color: rgba(253, 228, 156, 1);
+}
+
+.img {
+  margin: 50px auto;
+  width: 20%;
+}
+
+#view-img {
+  border: 3px solid #000;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.info table,
+.info th,
+.info td {
+  border: 3px solid #000;
+  border-collapse: collapse;
+}
+
+.info table {
+  width: 80%;
+  margin: 10px auto 0;
+  margin-bottom: 100px;
+}
+
+.info td {
+  text-align: center;
+}
+
+.info th,
+.info td {
+  padding: 20px;
+}
+
+/* ===========================================================================================================
+
+                                            All_Staff page specific
+
+ =========================================================================================================== */
+
+.allStaffInfo {
+  margin-top: 50px;
+}
+
+/* Search box */
+.search-box {
+  position: relative;
+  width: 100%;
+  height: 5vh;
+}
+
+.search-box input {
+  border: 3px solid #000;
+  border-radius: 20px;
+  position: absolute;
+  right: 140px;
+  margin-top: 2vh;
+  height: 40px;
+  width: 300px;
+  text-align: right 5px;
+  outline: none;
+  padding-left: 33px;
+}
+
+.search-box i {
+  position: absolute;
+  right: 410px;
+  margin-top: 23px;
+  z-index: 1;
+  color: gray;
+}
+
+/* ===========================================================================================================
+
+                                            Edit page specific
+
+ =========================================================================================================== */
+
+.editPage {
+  width: 90%;
+  min-height: 120vh;
+  /* background-color: #000; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: rgba(253, 228, 156, 1);
+  /* color: red; */
+}
+
+.editPage label,
+.add label,
+.add h1 {
+  color: rgba(253, 228, 156, 1);
+}
+
+.add h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.editPage h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.editPage table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  font-size: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.editPage form {
+  margin-bottom: 50px;
+}
+
+.editPage table input,
+.delete-inp {
+  background: transparent;
+  font-size: 100%;
+  border: none;
+  color: rgba(253, 228, 156, 1);
+  border-bottom: 2px solid #000;
+}
+
+.editPage input:hover,
+.delete-inp:hover {
+  color: #ecd662;
+}
+
+.editPage input:focus,
+.delete-inp:focus {
+  outline: none;
+  border-bottom: 2px solid #000;
+}
+
+input[type='file'] {
+  visibility: hidden;
+}
+
+.img-btn {
+  margin-top: 8px;
+  float: left;
+}
+
+.img-btn:hover {
+  color: #ecd662;
+}
+
+.err {
+  height: 2vh;
+  color: #082032;
+  /* background-color: red; */
+}
+
+.btn {
+  display: inline-block;
+  width: 30%;
+  border: 2px solid #000;
+  height: 40px;
+  background-color: transparent;
+  color: rgba(253, 228, 156, 1);
+  margin-top: 20px;
+}
+
+/* ===========================================================================================================
+
+                                            Login page specific
+
+ =========================================================================================================== */
+.login-anchors {
+  color: rgba(253, 228, 156, 1);
+  text-decoration: none;
+}
+
+.login-anchors:hover {
+  color: #df711b;
+}
+
+/* ===========================================================================================================
+
+                                            Menu page specific
+
+ =========================================================================================================== */
+
+.menu-links {
+  width: 80%;
+  height: 80vh;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-links i {
+  margin-right: 10px;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 150%;
+  text-decoration: none;
+  color: rgba(253, 228, 156, 1);
+}
+
+.links a:hover {
+  transition: 0.5s;
+  font-size: 200%;
+}
+
+#add-menu {
+  border: 2px solid #000;
+  background: transparent;
+  color: rgba(253, 228, 156, 1);
+}
+
+textarea:focus {
+  outline: none;
+}

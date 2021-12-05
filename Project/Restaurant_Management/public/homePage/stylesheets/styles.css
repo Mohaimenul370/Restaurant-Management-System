@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(245, 92, 71, 1),
+      rgba(245, 92, 71, 0.4)
+    ),
+    url('../images/resto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#link {
+  background-color: rgba(41, 59, 95, 1);
+  width: 50%;
+  border-right: 2px solid rgba(245, 92, 71, 1);
+  min-height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 150%;
+  text-decoration: none;
+  color: rgba(253, 228, 156, 1);
+}
+
+.links a:hover {
+  transition: 0.5s;
+  font-size: 200%;
+}
+
+.links i {
+  margin-right: 20px;
+}
+
+.app-name {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  color: #ecefa4;
+  font-size: 150%;
+}
+
+#loader-container {
+  height: 100vh;
+  background-color: #082032;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  /* background-color: red; */
+  border: 5px solid red;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: #aa2b1d;
+  border-left-color: #e4e978;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+  50% {
+    border-left-color: #fdf5ca;
+    border-right-color: #f6a9a9;
+  }
+  75% {
+    border-left-color: #fdf6f0;
+    border-right-color: #fdefef;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
