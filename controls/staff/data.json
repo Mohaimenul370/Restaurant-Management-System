@@ -1,0 +1,39 @@
+[
+    {
+        "Full name": "Shahed Chowdhury Omi",
+        "Email": "umsi@umich.edu",
+        "Password": "qwertyuiop",
+        "Gender": "Male",
+        "Designation": "Manager",
+        "Favorite foods": [
+            "chinese",
+            "fast-food"
+        ],
+        "Image-location": "..\/..\/uploads\/stuff\/python.png"
+    },
+    {
+        "Full name": "Justin Beiber",
+        "Email": "abcde@gmail.com",
+        "Password": "asdfghjkl",
+        "Gender": "Male",
+        "Designation": "Waiter",
+        "Favorite foods": [
+            "chinese",
+            "local",
+            "fast-food"
+        ],
+        "Image-location": "..\/..\/uploads\/stuff\/php.jpg"
+    },
+    {
+        "Full name": "Shahed Chowdhury Omi",
+        "Email": "shahedc414@gmail.com",
+        "Password": "qwertyuiop",
+        "Gender": "Male",
+        "Designation": "Chef",
+        "Favorite foods": [
+            "chinese",
+            "local"
+        ],
+        "Image-location": "..\/..\/uploads\/stuff\/java.png"
+    }
+]
